@@ -1,0 +1,216 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo : {
+typeName: 'GSTR1-Report',
+typeNamePlural: 'GSTR1-Report'
+}
+annotate entity ZFI_GSTR1_REPORT with
+{
+  @UI.facet: [
+  {
+  id: 'idSelctionInformation',
+  type: #COLLECTION,
+  label: 'SelectionDetails',
+  position: 10
+  },
+  {
+  id: 'idGSTR2',
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Gstr2Report',
+  position: 20,
+  parentId: 'idSelctionInformation',
+  targetQualifier: 'tqGstr2'
+  }
+  ]
+
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  @EndUserText.label: 'Company Code'
+  CompanyCode;
+  @UI.lineItem: [{ position: 15 }]
+  @UI.selectionField: [{ position: 15 }]
+  @UI.identification: [{ position: 15 }]
+  @EndUserText.label: 'Fiscal Year'
+  FiscalYear;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.selectionField: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  @EndUserText.label: 'Invoice No./ Credit Note No-SAP'
+  AccountingDocument;
+  @UI.lineItem: [{ position: 35 }]
+  @UI.identification: [{ position: 35 }]
+  @EndUserText.label: 'Company Code Name'
+  CompanyCodeName;
+  @UI.lineItem: [{ position: 45 }]
+  @UI.identification: [{ position: 45 }]
+  @EndUserText.label: 'GL Account'
+  GLAccount;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  @EndUserText.label: 'GL Description'
+  GLAccountName;
+  @UI.lineItem: [{ position: 55 }]
+  @UI.identification: [{ position: 55 }]
+  @EndUserText.label: 'Customer'
+  Customer;
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  @EndUserText.label: 'Customer GSTIN'
+  CustGstin;
+  @UI.lineItem: [{ position: 65 }]
+  @UI.identification: [{ position: 65 }]
+  @EndUserText.label: 'Customer PAN'
+  Pan;
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  @EndUserText.label: 'Customer Number'
+  CustomerName;
+  @UI.lineItem: [{ position: 75 }]
+  @UI.identification: [{ position: 75 }]
+  @EndUserText.label: 'Business Place'
+  BusinessPlace;
+  @UI.lineItem: [{ position: 80 }]
+  @UI.identification: [{ position: 80 }]
+  @EndUserText.label: 'Invoice Ref Number'
+  InvRefNumber;
+  @UI.lineItem: [{ position: 85 }]
+  @UI.identification: [{ position: 85 }]
+  @EndUserText.label: 'Document Type'
+  DocumentType;
+  @UI.lineItem: [{ position: 90 }]
+  @UI.identification: [{ position: 90 }]
+  @EndUserText.label: 'Document Type Descp'
+  DocTypeDesc;
+  @UI.lineItem: [{ position: 95 }]
+  @UI.identification: [{ position: 95 }]
+  @EndUserText.label: 'Document Date'
+  DocumentDate;
+  @UI.lineItem: [{ position: 100 }]
+  @UI.identification: [{ position: 100 }]
+  @EndUserText.label: 'Posting Date'
+  PostingDate;
+  @UI.lineItem: [{ position: 105 }]
+  @UI.identification: [{ position: 105 }]
+  @EndUserText.label: 'Place of Supply'
+  PlaceOfSupply;
+  @UI.lineItem: [{ position: 110}]
+  @UI.identification: [{ position: 110 }]
+  @EndUserText.label: 'Supply Attract Reverse Charge'
+  SuppAttRevChrge;
+  @UI.lineItem: [{ position: 120 }]
+  @UI.identification: [{ position: 120 }]
+  @EndUserText.label: 'Tax Code'
+  TaxCode;
+  @UI.lineItem: [{ position: 125 }]
+  @UI.identification: [{ position: 125 }]
+  @EndUserText.label: 'Tax Code Description'
+  TaxCodeName;
+  @UI.lineItem: [{ position: 130 }]
+  @UI.identification: [{ position: 130 }]
+  @EndUserText.label: 'Taxable Amount'
+  ItemTaxAmt;
+  @UI.lineItem: [{ position: 135 }]
+  @UI.identification: [{ position: 135 }]
+  @EndUserText.label: 'IGST Rate'
+  IgstRate;
+  @UI.lineItem: [{ position: 140 }]
+  @UI.identification: [{ position: 140 }]
+  @EndUserText.label: 'CGST Rate'
+  CgstRate;
+  @UI.lineItem: [{ position: 145 }]
+  @UI.identification: [{ position: 145 }]
+  @EndUserText.label: 'SGST Rate'
+  SgstRate;
+  @UI.lineItem: [{ position: 150 }]
+  @UI.identification: [{ position: 150 }]
+  @EndUserText.label: 'UGST Rate'
+  UgstRate;
+  @UI.lineItem: [{ position: 155 }]
+  @UI.identification: [{ position: 155 }]
+  @EndUserText.label: 'IGST Amount'
+  IGSTAmt;
+  @UI.lineItem: [{ position: 160 }]
+  @UI.identification: [{ position: 160 }]
+  @EndUserText.label: 'CGST Amount'
+  CGSTAmt;
+  @UI.lineItem: [{ position: 165 }]
+  @UI.identification: [{ position: 165 }]
+  @EndUserText.label: 'SGST Amount'
+  SGSTAmt;
+  @UI.lineItem: [{ position: 170 }]
+  @UI.identification: [{ position: 170 }]
+  @EndUserText.label: 'UGST Amount'
+  UGSTAmt;
+  @UI.lineItem: [{ position: 175 }]
+  @UI.identification: [{ position: 175 }]
+  @EndUserText.label: 'Invoice value'
+  InvoiceAmt;
+  @UI.lineItem: [{ position: 180 }]
+  @UI.identification: [{ position: 180 }]
+  @EndUserText.label: 'HSN Code'
+  HsnSacCode;
+  @UI.lineItem: [{ position: 185 }]
+  @UI.identification: [{ position: 185 }]
+  @EndUserText.label: 'Profit Center'
+  ProfitCenter;
+  @UI.lineItem: [{ position: 190 }]
+  @UI.identification: [{ position: 190 }]
+  @EndUserText.label: 'Profit Center Desp'
+  ProfitCenterDesp;
+  @UI.lineItem: [{ position: 195 }]
+  @UI.identification: [{ position: 195 }]
+  @EndUserText.label: 'HSN Nature'
+  HsnNature;
+  @UI.lineItem: [{ position: 200 }]
+  @UI.identification: [{ position: 200 }]
+  @EndUserText.label: 'GST Status'
+  GstinStatus;
+  @UI.lineItem: [{ position: 205 }]
+  @UI.identification: [{ position: 205 }]
+  @EndUserText.label: 'Our GSTIN'
+  OurGSTIN;
+  @UI.lineItem: [{ position: 210 }]
+  @UI.identification: [{ position: 210 }]
+  @EndUserText.label: 'Booking Date'
+  BookingDate;
+  @UI.lineItem: [{ position: 215 }]
+  @UI.identification: [{ position: 215 }]
+  @EndUserText.label: 'Carpet Area'
+  CarpetArea;
+  @UI.lineItem: [{ position: 220 }]
+  @UI.identification: [{ position: 220 }]
+  @EndUserText.label: 'Unit No'
+  UnitNo;
+  @UI.lineItem: [{ position: 225 }]
+  @UI.identification: [{ position: 225 }]
+  @EndUserText.label: 'QTY'
+  Qty;
+  @UI.lineItem: [{ position: 230 }]
+  @UI.identification: [{ position: 230 }]
+  @EndUserText.label: 'UOM'
+  Uom;
+  @UI.lineItem: [{ position: 235 }]
+  @UI.identification: [{ position: 235 }]
+  @EndUserText.label: 'IRN Number'
+  IRN;
+  //  @UI.lineItem: [{ position: 240 }]
+  //  @UI.identification: [{ position: 240 }]
+  //  @EndUserText.label: 'IRN Date'
+  //  IRNDate;
+  @UI.lineItem: [{ position: 245 }]
+  @UI.identification: [{ position: 245 }]
+  @EndUserText.label: 'Park by'
+  ParkBy;
+  @UI.lineItem: [{ position: 250 }]
+  @UI.identification: [{ position: 250 }]
+  @EndUserText.label: 'Post by'
+  PostBy;
+  @UI.lineItem: [{ position: 255 }]
+  @UI.identification: [{ position: 255 }]
+  @EndUserText.label: 'CS Document No'
+  CSreference;
+  @UI.lineItem: [{ position: 260 }]
+  @UI.identification: [{ position: 260 }]
+  @EndUserText.label: 'Milestone Descp'
+  MilestoneDescp;
+}

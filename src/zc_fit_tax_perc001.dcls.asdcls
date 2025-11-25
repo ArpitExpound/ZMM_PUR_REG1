@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_FIT_TAX_PERC001'
+@MappingRole: true
+define role ZC_FIT_TAX_PERC001 {
+  grant select on ZC_FIT_TAX_PERC001
+  where INHERITING CONDITIONS FROM ENTITY ZR_FIT_TAX_PERC002 REPLACING { ROOT WITH _BaseEntity };
+}

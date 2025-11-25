@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "GSTR2 Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zmmgstr2n1"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_EA570A41DA02A8C3A2D62FF9FBDCBFA903CA7FCD_TM",
+    "semanticObject": "zmm_gstr2_n",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_EA570A41DA02A8C3A2D62FF9FBDCBFA903CA7FCD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GSTR2 Report"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'TAX PERCENTAGE SERVICE DEFINITION'
+define service ZSD_FIT_TAX_PREC {
+  expose ZC_FIT_TAX_PREC;
+}

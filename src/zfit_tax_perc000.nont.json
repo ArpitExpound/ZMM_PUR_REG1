@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZFIT_TAX_PERC000",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZFIT_TAX_PERC000",
+  "sapObjectType": "ZFIT_TAX_PERC000",
+  "rootNode": true
+}

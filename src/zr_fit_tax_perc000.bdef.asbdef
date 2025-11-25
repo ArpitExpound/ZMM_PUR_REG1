@@ -1,0 +1,53 @@
+managed implementation in class ZBP_R_FIT_TAX_PERC unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_FIT_TAX_PERC000 alias ZrFitTaxPerc000
+persistent table ZFIT_TAX_PERC
+extensible
+draft table ZFIT_TAX_PERC_D
+etag master Locallastchangedat
+lock master total etag Lastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Taxcode;
+
+  field ( readonly )
+   Localcreatedby,
+   Localcreatedat,
+   Locallastchangedby,
+   Locallastchangedat,
+   Lastchangedat;
+
+  field ( readonly : update )
+   Taxcode;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZFIT_TAX_PERC corresponding extensible
+  {
+    Taxcode = taxcode;
+    IgstRate = igst_rate;
+    CgstRate = cgst_rate;
+    SgstRate = sgst_rate;
+    RcmIgstRate = rcm_igst_rate;
+    RcmCgstRate = rcm_cgst_rate;
+    RcmSgstRate = rcm_sgst_rate;
+    Localcreatedby = localcreatedby;
+    Localcreatedat = localcreatedat;
+    Locallastchangedby = locallastchangedby;
+    Locallastchangedat = locallastchangedat;
+    Lastchangedat = lastchangedat;
+  }
+
+}

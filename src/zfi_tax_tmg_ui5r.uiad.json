@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Tax Code"
+  },
+  "ui5AppDetails": {
+    "appId": "zfitaxtmg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_6D14FA27A02DD08806567BACCEA3D8801ADC5B98_TM",
+    "semanticObject": "zfi_tax_tmg",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_6D14FA27A02DD08806567BACCEA3D8801ADC5B98_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Tax Code"
+      }
+    }
+  ]
+}

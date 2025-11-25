@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Tax Rate TMG"
+  },
+  "ui5AppDetails": {
+    "appId": "zfitaxtmgn"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DCE86E0D752DB3BC3BAB84FDB70B5DCC16DF8F67_TM",
+    "semanticObject": "zmm_tax_tmg_n",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DCE86E0D752DB3BC3BAB84FDB70B5DCC16DF8F67_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Tax Rate TMG"
+      }
+    }
+  ]
+}

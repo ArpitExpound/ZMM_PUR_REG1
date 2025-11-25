@@ -1,0 +1,14 @@
+managed implementation in class zbp_c_fit_tax_prec unique;
+strict ( 2 );
+
+define behavior for ZC_FIT_TAX_PREC //alias <alias_name>
+persistent table zfit_tax_perc
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Taxcode;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition - GSTR2 Report'
+define service ZFI_GSTR2_REP_SD {
+  expose ZFI_GSTR2_REPORT;
+}

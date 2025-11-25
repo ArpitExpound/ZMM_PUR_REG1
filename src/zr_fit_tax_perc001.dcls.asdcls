@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_FIT_TAX_PERC001'
+@MappingRole: true
+define role ZR_FIT_TAX_PERC001 {
+  grant select on ZR_FIT_TAX_PERC001
+  where TRUE;
+}
